@@ -3,14 +3,14 @@ import numpy as np
 #
 # Definições
 #
-#entradas = np.array([[0,0], [0,1], [1,0], [1,1]]) # entradas operador lógico AND
-#saidas = np.array([0,0,0,1]) # saídas operador lógico AND
+entradas = np.array([[0,0], [0,1], [1,0], [1,1]]) # entradas operador lógico AND
+saidas = np.array([0,0,0,1]) # saídas operador lógico AND
 
 #entradas = np.array([[0,0],[0,1],[1,0],[1,1]]) # entradas operador lógico OR
 #saidas = np.array([0,1,1,1]) # saídas operador lógico OR
 
-entradas = np.array([[0,0],[0,1],[1,0],[1,1]]) # entradas operador lógico XOR
-saidas = np.array([0,1,1,0]) # saídas operador lógico XOR
+#entradas = np.array([[0,0],[0,1],[1,0],[1,1]]) # entradas operador lógico XOR
+#saidas = np.array([0,1,1,0]) # saídas operador lógico XOR
 
 pesos = np.array([0.0, 0.0])
 taxaAprendizagem = 0.1
@@ -33,7 +33,7 @@ def calculaSaida(registro):
 # também realiza o processo de ajuste de pesos (encontra o melhor conjunto de pesos)
 def treinar():
     _erroTotal = 1
-    while(_erroTotal != 0): # só para quando o erro for igual a zero
+    while(_erroTotal != 0): # para quando o erro for igual a zero
         _erroTotal = 0
         for saida in range(len(saidas)):
             _saidaCalculada = calculaSaida(np.asarray(entradas[saida])) # calcula saída com os pesos atuais
