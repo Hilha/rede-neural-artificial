@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="788232c0-53a4-401b-b099-cfcd298641a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/multicamada/breast_cancer.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py" afterPath="$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,21 +17,9 @@
       <file leaf-file-name="perceptron.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simples/perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            <state relative-caret-position="-143">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backpropagation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multicamada/backpropagation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2618">
-              <caret line="156" column="14" lean-forward="false" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
-              <folding>
-                <element signature="e#97#108#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -40,13 +27,14 @@
       <file leaf-file-name="backpropagation_flor_lis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="364" column="0" lean-forward="true" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
+            <state relative-caret-position="166">
+              <caret line="382" column="18" lean-forward="true" selection-start-line="382" selection-start-column="18" selection-end-line="382" selection-end-column="18" />
               <folding>
-                <element signature="e#96#107#0" expanded="true" />
-                <element signature="e#6829#12334#0" expanded="false" />
-                <element signature="e#12405#13486#0" expanded="false" />
-                <element signature="e#13492#13989#1" expanded="false" />
+                <element signature="e#96#122#0" expanded="true" />
+                <element signature="e#7813#13318#0" expanded="false" />
+                <element signature="e#13399#13434#0" expanded="false" />
+                <element signature="e#13399#13434#0" expanded="false" />
+                <element signature="e#14499#14996#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -117,6 +105,7 @@
         <option value="$PROJECT_DIR$/multicamada/florlis_teste.py" />
         <option value="$PROJECT_DIR$/multicamada/backpropagation.py" />
         <option value="$PROJECT_DIR$/multicamada/breast_cancer.py" />
+        <option value="$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py" />
       </list>
     </option>
   </component>
@@ -142,6 +131,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,8 +159,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.breast_cancer (1)">
+  <component name="RunManager" selected="Python.backpropagation_flor_lis">
     <configuration name="backpropagation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,6 +204,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="backpropagation_flor_lis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multicamada" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rede-neural-artificial" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="breast_cancer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,23 +234,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="rede-neural-artificial" />
       <option name="SCRIPT_NAME" value="C:\Users\Joshua Raiser\git\rede-neural-artificial\multicamada\backpropagation_flor_lis.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="cancer_mama" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multicamada" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="rede-neural-artificial" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multicamada/cancer_mama.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,19 +273,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.cancer_mama" />
-      <item index="1" class="java.lang.String" itemvalue="Python.backpropagation" />
-      <item index="2" class="java.lang.String" itemvalue="Python.florlis_teste" />
-      <item index="3" class="java.lang.String" itemvalue="Python.lis" />
-      <item index="4" class="java.lang.String" itemvalue="Python.breast_cancer (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.backpropagation" />
+      <item index="1" class="java.lang.String" itemvalue="Python.florlis_teste" />
+      <item index="2" class="java.lang.String" itemvalue="Python.lis" />
+      <item index="3" class="java.lang.String" itemvalue="Python.breast_cancer (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.backpropagation_flor_lis" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.breast_cancer (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.florlis_teste" />
-        <item index="2" class="java.lang.String" itemvalue="Python.backpropagation" />
-        <item index="3" class="java.lang.String" itemvalue="Python.lis" />
-        <item index="4" class="java.lang.String" itemvalue="Python.cancer_mama" />
+        <item index="0" class="java.lang.String" itemvalue="Python.backpropagation_flor_lis" />
+        <item index="1" class="java.lang.String" itemvalue="Python.breast_cancer (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.florlis_teste" />
+        <item index="3" class="java.lang.String" itemvalue="Python.backpropagation" />
+        <item index="4" class="java.lang.String" itemvalue="Python.lis" />
       </list>
     </recent_temporary>
   </component>
@@ -317,12 +306,12 @@
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24309815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15030675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09643917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3041543" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -342,11 +331,94 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/simples/perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bases/bases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bases/breast_cancer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="102" lean-forward="false" selection-start-line="1" selection-start-column="102" selection-end-line="1" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6086">
+          <caret line="358" column="47" lean-forward="true" selection-start-line="358" selection-start-column="47" selection-end-line="358" selection-end-column="47" />
+          <folding>
+            <element signature="e#96#122#0" expanded="true" />
+            <element signature="e#7813#13318#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#14499#14996#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simples/perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multicamada/backpropagation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2652">
+          <caret line="156" column="14" lean-forward="false" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bases/bases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bases/breast_cancer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="102" lean-forward="false" selection-start-line="1" selection-start-column="102" selection-end-line="1" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6188">
+          <caret line="364" column="0" lean-forward="true" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
+          <folding>
+            <element signature="e#96#122#0" expanded="true" />
+            <element signature="e#7813#13318#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#14499#14996#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simples/perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -359,9 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
           <caret line="156" column="14" lean-forward="false" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
-          <folding>
-            <element signature="e#97#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -386,10 +455,11 @@
         <state relative-caret-position="3383">
           <caret line="205" column="17" lean-forward="true" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="17" />
           <folding>
-            <element signature="e#96#107#0" expanded="true" />
-            <element signature="e#6829#12334#0" expanded="false" />
-            <element signature="e#12405#13486#0" expanded="false" />
-            <element signature="e#13492#13989#1" expanded="false" />
+            <element signature="e#96#122#0" expanded="true" />
+            <element signature="e#7813#13318#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#14499#14996#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -406,9 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
           <caret line="156" column="14" lean-forward="false" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
-          <folding>
-            <element signature="e#97#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -433,10 +500,11 @@
         <state relative-caret-position="3366">
           <caret line="204" column="12" lean-forward="true" selection-start-line="204" selection-start-column="12" selection-end-line="204" selection-end-column="12" />
           <folding>
-            <element signature="e#96#107#0" expanded="true" />
-            <element signature="e#6829#12334#0" expanded="false" />
-            <element signature="e#12405#13486#0" expanded="false" />
-            <element signature="e#13492#13989#1" expanded="false" />
+            <element signature="e#96#122#0" expanded="true" />
+            <element signature="e#7813#13318#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#14499#14996#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -453,9 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
           <caret line="156" column="14" lean-forward="false" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
-          <folding>
-            <element signature="e#97#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,10 +545,11 @@
         <state relative-caret-position="3264">
           <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
           <folding>
-            <element signature="e#96#107#0" expanded="true" />
-            <element signature="e#6829#12334#0" expanded="false" />
-            <element signature="e#12405#13486#0" expanded="false" />
-            <element signature="e#13492#13989#1" expanded="false" />
+            <element signature="e#96#122#0" expanded="true" />
+            <element signature="e#7813#13318#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#14499#14996#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -500,9 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
           <caret line="156" column="14" lean-forward="true" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
-          <folding>
-            <element signature="e#97#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -527,10 +590,11 @@
         <state relative-caret-position="3349">
           <caret line="203" column="0" lean-forward="true" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
           <folding>
-            <element signature="e#96#107#0" expanded="true" />
-            <element signature="e#6829#12334#0" expanded="false" />
-            <element signature="e#12405#13486#0" expanded="false" />
-            <element signature="e#13492#13989#1" expanded="false" />
+            <element signature="e#96#122#0" expanded="true" />
+            <element signature="e#7813#13318#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#14499#14996#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -547,9 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
           <caret line="113" column="20" lean-forward="true" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
-          <folding>
-            <element signature="e#97#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,10 +635,11 @@
         <state relative-caret-position="2771">
           <caret line="169" column="62" lean-forward="true" selection-start-line="169" selection-start-column="62" selection-end-line="169" selection-end-column="62" />
           <folding>
-            <element signature="e#96#107#0" expanded="true" />
-            <element signature="e#6829#12334#0" expanded="false" />
-            <element signature="e#12405#13486#0" expanded="false" />
-            <element signature="e#13492#13989#1" expanded="false" />
+            <element signature="e#96#122#0" expanded="true" />
+            <element signature="e#7813#13318#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#14499#14996#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,29 +711,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2618">
           <caret line="156" column="14" lean-forward="false" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
-          <folding>
-            <element signature="e#97#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simples/perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="-143">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/multicamada/backpropagation_flor_lis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="364" column="0" lean-forward="true" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
+        <state relative-caret-position="166">
+          <caret line="382" column="18" lean-forward="true" selection-start-line="382" selection-start-column="18" selection-end-line="382" selection-end-column="18" />
           <folding>
-            <element signature="e#96#107#0" expanded="true" />
-            <element signature="e#6829#12334#0" expanded="false" />
-            <element signature="e#12405#13486#0" expanded="false" />
-            <element signature="e#13492#13989#1" expanded="false" />
+            <element signature="e#96#122#0" expanded="true" />
+            <element signature="e#7813#13318#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#13399#13434#0" expanded="false" />
+            <element signature="e#14499#14996#1" expanded="false" />
           </folding>
         </state>
       </provider>

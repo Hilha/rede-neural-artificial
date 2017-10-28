@@ -3,19 +3,22 @@
     Created by user Joshua Raiser
     2017/17/10 - 04:35:22.0
 """
+from random import shuffle
 import math
 import random
 import numpy
-
-from bases import bases
-
-from sklearn import datasets
+import matplotlib.pyplot as plt
 
 def criar_linha():
     print("-" * 110)
 
 def rand(a, b):
     return (b - a) * random.random() + a
+
+# aleatoriza as entradas para treinamento
+def _shuffle(list):
+    lista_aleatorizada = random.sample(list, len(list))
+    return lista_aleatorizada
 
 # função de ativação sigmoide
 def funcao_ativacao_sigmoid(x):
@@ -34,6 +37,21 @@ def derivada_funcao_ativacao_tang_hip(x):
     t = funcao_ativacao_tang_hip(x)
     return 1 - t ** 2
 
+# gera graficos do treinamento da rede (Epocas vs Erros)
+def gera_grafico(rede):
+    fig = plt.figure("Rede Neural Artificial - Treinamento")
+    plt.xlabel('Epocas')
+    plt.ylabel('Erro (%)')
+    plt.xlim(min(rede.epocas) - 5, max(rede.epocas) + 5)
+    plt.ylim(min(rede.erros) - 5, max(rede.erros) + 5)
+
+    plt.plot(rede.epocas, rede.erros, 'g-', rede.epocas, rede.erros, 'k.')
+    marcacao_erros = fig.add_subplot(111)
+    for i in range(len(rede.erros)):
+        marcacao_erros.annotate(str('Erro %2.3f' % rede.erros[i]), xy=(rede.epocas[i], rede.erros[i]),
+                                xytext=(rede.epocas[i], rede.erros[i] + 1))
+    plt.show()
+
 class RedeNeural:
     def __init__(self, neuronios_entrada, neuronios_ocultos, neuronios_saida, iteracoes, aprendizagem, momento):
         # camada de entrada
@@ -48,6 +66,8 @@ class RedeNeural:
         self.taxa_aprendizado = aprendizagem
         # momento
         self.momentum = momento
+        # erros/epocas para plotar
+        self.erros, self.epocas = [], []
 
         # ativa as camadas de neurônios
         # cria uma matriz de uma linha pela quantidade de neurônios (1xN)
@@ -91,7 +111,6 @@ class RedeNeural:
             self.ativacao_ocultos[j] = funcao_ativacao_sigmoid(soma)
 
         # calcula as ativações dos neurônios da camada de saída
-        # Note que as saidas dos neurônios da camada oculta fazem o papel de entrada
         # para os neurôios da camada de saída.
         for j in range(self.neuronios_saida):
             soma = 0
@@ -144,7 +163,8 @@ class RedeNeural:
     def test(self, entradas_saidas):
         for p in entradas_saidas:
             array = self.fase_forward(p[0])
-            print("Entradas: " + str(p[0]) + ' - Saída encontrada/fase forward: ' + str(array))
+            criar_linha()
+            print("Entradas: " + str(p[0]) + "\nSaída encontrada/fase forward: \nSetosa: " + str(array[0]) + "\nVersicolor: " + str(array[1]) + "\nVirginia: " + str(array[2]))
 
     def treinar(self, entradas_saidas):
         for i in range(self.max_iteracoes):
@@ -156,6 +176,8 @@ class RedeNeural:
                 erro = erro + self.fase_backward(saidas_desejadas)
             if i % 100 == 0:
                 print("Erro = %2.3f" % erro)
+                self.erros.append(erro)
+                self.epocas.append(i)
 
 def iniciar():
 
@@ -290,30 +312,30 @@ def iniciar():
 
     # 25 dados para teste da rede (4 entradas/ 3 saídas)
     teste = [
-        [[7.2, 3.0, 5.8, 1.6], [0, 0, 1]],
-        [[5.2, 3.5, 1.5, 0.2], [1, 0, 0]],
-        [[6.7, 3.0, 5.0, 1.7], [0, 1, 0]],
-        [[6.1, 3.0, 4.9, 1.8], [0, 0, 1]],
-        [[5.2, 3.4, 1.4, 0.2], [1, 0, 0]],
-        [[6.0, 2.9, 4.5, 1.5], [0, 1, 0]],
-        [[6.4, 2.8, 5.6, 2.1], [0, 0, 1]],
-        [[4.7, 3.2, 1.6, 0.2], [1, 0, 0]],
-        [[5.7, 2.6, 3.5, 1.0], [0, 1, 0]],
-        [[5.6, 2.8, 4.9, 2.0], [0, 0, 1]],
-        [[4.6, 3.6, 1.0, 0.2], [1, 0, 0]],
-        [[6.3, 2.5, 4.9, 1.5], [0, 1, 0]],
-        [[7.7, 2.8, 6.7, 2.0], [0, 0, 1]],
-        [[5.1, 3.3, 1.7, 0.5], [1, 0, 0]],
-        [[6.1, 2.8, 4.7, 1.2], [0, 1, 0]],
-        [[6.3, 2.7, 4.9, 1.8], [0, 0, 1]],
-        [[4.8, 3.4, 1.9, 0.2], [1, 0, 0]],
-        [[6.4, 2.9, 4.3, 1.3], [0, 1, 0]],
-        [[6.7, 3.3, 5.7, 2.1], [0, 0, 1]],
-        [[5.0, 3.0, 1.6, 0.2], [1, 0, 0]],
-        [[6.6, 3.0, 4.4, 1.4], [0, 1, 0]],
-        [[7.2, 3.2, 6.0, 1.8], [0, 0, 1]],
-        [[5.0, 3.4, 1.6, 0.4], [1, 0, 0]],
-        [[5.8, 2.8, 4.8, 1.4], [0, 1, 0]],
+        #[[7.2, 3.0, 5.8, 1.6], [0, 0, 1]],
+        #[[5.2, 3.5, 1.5, 0.2], [1, 0, 0]],
+        #[[6.7, 3.0, 5.0, 1.7], [0, 1, 0]],
+        #[[6.1, 3.0, 4.9, 1.8], [0, 0, 1]],
+        #[[5.2, 3.4, 1.4, 0.2], [1, 0, 0]],
+        #[[6.0, 2.9, 4.5, 1.5], [0, 1, 0]],
+        #[[6.4, 2.8, 5.6, 2.1], [0, 0, 1]],
+        #[[4.7, 3.2, 1.6, 0.2], [1, 0, 0]],
+        #[[5.7, 2.6, 3.5, 1.0], [0, 1, 0]],
+        #[[5.6, 2.8, 4.9, 2.0], [0, 0, 1]],
+        #[[4.6, 3.6, 1.0, 0.2], [1, 0, 0]],
+        #[[6.3, 2.5, 4.9, 1.5], [0, 1, 0]],
+        #[[7.7, 2.8, 6.7, 2.0], [0, 0, 1]],
+        #[[5.1, 3.3, 1.7, 0.5], [1, 0, 0]],
+        #[[6.1, 2.8, 4.7, 1.2], [0, 1, 0]],
+        #[[6.3, 2.7, 4.9, 1.8], [0, 0, 1]],
+        #[[4.8, 3.4, 1.9, 0.2], [1, 0, 0]],
+        #[[6.4, 2.9, 4.3, 1.3], [0, 1, 0]],
+        #[[6.7, 3.3, 5.7, 2.1], [0, 0, 1]],
+        #[[5.0, 3.0, 1.6, 0.2], [1, 0, 0]],
+        #[[6.6, 3.0, 4.4, 1.4], [0, 1, 0]],
+        #[[7.2, 3.2, 6.0, 1.8], [0, 0, 1]],
+        #[[5.0, 3.4, 1.6, 0.4], [1, 0, 0]],
+        #[[5.8, 2.8, 4.8, 1.4], [0, 1, 0]]
         [[6.2, 2.8, 4.8, 1.8], [0, 0, 1]]
     ]
 
@@ -355,12 +377,12 @@ def iniciar():
     # var4: máximo de iterações
     # var5: taxa de aprendizagem
     # var6: momento
-    # não é necessário a inclusão do bias, o mesmo já é incluso na costrunção da rede
-    rede = RedeNeural(4, 7, 3, 5000, 0.15, 0.1)
+    # não é necessário a inclusão do bias, o mesmo já está incluso na costrunção da rede
+    rede = RedeNeural(4, 3, 3, 1000, 0.5, 0.2)
 
     # treinar rede
     criar_linha()
-    rede.treinar(flor_lis)
+    rede.treinar(_shuffle(flor_lis))
     print("Rede treinada!")
 
     # testar
@@ -370,6 +392,8 @@ def iniciar():
     criar_linha()
     rede.test(teste)
 
+    # gera graficos de treinamento da rede
+    gera_grafico(rede)
 
 if __name__ == '__main__':
     iniciar()
