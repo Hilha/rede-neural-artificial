@@ -1,13 +1,13 @@
 """
     File: backpropagation
-    Created by user Joshua Raiser
-    2017/17/10 - 04:35:22.0
+    Created by user Matheus Hilha
+    2019/25/10 - 07:48:32.0
 """
 from random import shuffle
 import math
 import random
 import numpy
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 def criar_linha():
     print("-" * 110)
@@ -38,19 +38,19 @@ def derivada_funcao_ativacao_tang_hip(x):
     return 1 - t ** 2
 
 # gera graficos do treinamento da rede (Epocas vs Erros)
-def gera_grafico(rede):
-    fig = plt.figure("Rede Neural Artificial - Treinamento")
-    plt.xlabel('Epocas')
-    plt.ylabel('Erro (%)')
-    plt.xlim(min(rede.epocas) - 5, max(rede.epocas) + 5)
-    plt.ylim(min(rede.erros) - 5, max(rede.erros) + 5)
+#def gera_grafico(rede):
+ #   fig = plt.figure("Rede Neural Artificial - Treinamento")
+  #  plt.xlabel('Epocas')
+  ##  plt.ylabel('Erro (%)')
+  #  plt.xlim(min(rede.epocas) - 5, max(rede.epocas) + 5)
+  #  plt.ylim(min(rede.erros) - 5, max(rede.erros) + 5)
 
-    plt.plot(rede.epocas, rede.erros, 'g-', rede.epocas, rede.erros, 'k.')
-    marcacao_erros = fig.add_subplot(111)
-    for i in range(len(rede.erros)):
-        marcacao_erros.annotate(str('Erro %2.3f' % rede.erros[i]), xy=(rede.epocas[i], rede.erros[i]),
-                                xytext=(rede.epocas[i], rede.erros[i] + 1))
-    plt.show()
+   # plt.plot(rede.epocas, rede.erros, 'g-', rede.epocas, rede.erros, 'k.')
+   # marcacao_erros = fig.add_subplot(111)
+   # for i in range(len(rede.erros)):
+    #    marcacao_erros.annotate(str('Erro %2.3f' % rede.erros[i]), xy=(rede.epocas[i], rede.erros[i]),
+    #                            xytext=(rede.epocas[i], rede.erros[i] + 1))
+   # plt.show()
 
 class RedeNeural:
     def __init__(self, neuronios_entrada, neuronios_ocultos, neuronios_saida, iteracoes, aprendizagem, momento):
@@ -393,7 +393,7 @@ def iniciar():
     rede.test(teste)
 
     # gera graficos de treinamento da rede
-    gera_grafico(rede)
+  #  gera_grafico(rede)
 
 if __name__ == '__main__':
     iniciar()

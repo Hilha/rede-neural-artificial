@@ -1,7 +1,7 @@
 """
     File: backpropagation
-    Created by user Joshua Raiser
-    2017/17/10 - 04:35:22.0
+    Created by user Matheus Hilha
+    2019/25/10 - 04:35:22.0
 """
 
 import math
